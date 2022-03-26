@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body onload="inicio()">
+    <div>
+    <form class="form">
+        Nombre: <input type="text" id="txtNombre"/>
+        <br><br>
+        Telefono: <input type="tel" id="txtTelefono"/>
+        <br><br>
+        Mail: <input type="email" id="txtMail"/>
+        <br><br>
+        Charla: <select name="charla" id="cboCharla">
+                    <option value="seleccion">Seleccione su opción</option>
+                    <option value="charla1">Charla 1</option>
+                    <option value="charla2">Charla 2</option>
+                    <option value="charla3">Charla 3</option>
+                </select>
+        <br><br>
+        Certificado: <input type="checkbox" id="chkCertificado"/>
+        <br><br>
+        <input type="button" value="Agregar" id="btnAgregar" style="margin-right: 10px;"/>
+        <br><br><br>
+        <table id="lstExpositores" border="1" style="margin-top: 20px;">
+            <tr><th>NOMBRE</th><th>TELEFONO</th><th>MAIL</th><th>CHARLA</th><th>REQUIERE CERTIFICADO</th></tr>
+        </table>
+    </form>
+    </div>
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
